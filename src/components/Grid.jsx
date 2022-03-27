@@ -6,12 +6,7 @@ import { Item } from './Item'
 export const Grid = ({subject}) => {
   //const [items, setItems] = useState([])
   const [errors, setErrors] = useState(null)
-
   const {items, loading} = useFetchItems(subject)
-  // useEffect(() => {
-  //    request(subject)
-  //     .then(setItems)
-  // }, [subject])
   
   return (
     <>
