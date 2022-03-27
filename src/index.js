@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { GifExpert } from './GifExpert';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <GifExpert name='Juan'/>
   </React.StrictMode>,
   document.getElementById('root')
 );
