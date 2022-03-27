@@ -11,7 +11,7 @@ const sayHello = () => { return `Hello ${name}` }
   return (
       <>
       <h1> {sayHello(name)} </h1>
-      <p>Please write your name. <SetName setName={setName}/></p>
+      { !name && <p>Please write your name. <SetName setName={setName}/></p> }
       <AddSubject setSubjects={setSubjects}/>
       {subjects.map(subject => <Grid key={subject} subject={subject}/>)}
       </>
