@@ -10,10 +10,10 @@ const sayHello = () => { return `Hello ${name}` }
 
   return (
       <>
-      <h1> {sayHello(name)} </h1>
-      { !name && <p>Please write your name. <SetName setName={setName}/></p> }
-      <AddSubject setSubjects={setSubjects}/>
-      {subjects.map(subject => <Grid key={subject} subject={subject}/>)}
+      {name && <h3> {sayHello(name)} </h3>}
+      {!name && <p> Please write your name<SetName setName={setName} /> </p>}
+      <AddSubject setSubjects={setSubjects} />
+      {subjects.map(subject => <Grid key={subject} subject={subject} />)}
       </>
   )
 }

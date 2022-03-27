@@ -11,8 +11,8 @@ export const AddSubject = ({setSubjects}) => {
 
   return (
     <form onSubmit={submitHandler}>
-      <p> Please add a subject... </p>
-      <p><input type='text' value={text} onChange={inputHandler} /></p>
+      <p> Please add a subject </p>
+      <p> <input type='text' value={text} onChange={inputHandler} /> </p>
     </form>
   )
 }
