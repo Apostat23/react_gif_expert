@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { AddSubject } from './components/AddSubject'
 import { Grid } from './components/Grid'
 
-export const GifExpert = ({name='Diego'}) => {
-const [subjects, setSubjects] = useState(['Batman'])
+export const GifExpert = ({name}) => {
+const [subjects, setSubjects] = useState([''])
 const sayHello = () => { return `Hello ${name}` }
 
   return (
